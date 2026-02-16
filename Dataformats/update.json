@@ -1,0 +1,11 @@
+{
+    "name": "Angel",
+    "role": "Student",
+    "experience": 6,
+    "skills": [
+        "Python",
+        "Automation",
+        "API",
+        "Java"
+    ]
+}
