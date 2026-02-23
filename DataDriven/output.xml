@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.7 on win32)" generated="2026-02-20T17:45:18.708144" rpa="false" schemaversion="5">
+<suite id="s1" name="Excel" source="C:\Users\ANGEL PATI\WiproRobotFramewrok\DataDriven\Excel.robot">
+<test id="s1-t1" name="Login with user" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-20T17:45:18.979568" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-20T17:45:18.979370" elapsed="4.276716"/>
+</kw>
+<kw name="Login Test">
+<msg time="2026-02-20T17:45:23.257615" level="FAIL">Variable '${username}' not found.</msg>
+<arg>${username} and</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2026-02-20T17:45:23.256753" elapsed="0.000946">Variable '${username}' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-20T17:45:23.258179" elapsed="2.145967"/>
+</kw>
+<status status="FAIL" start="2026-02-20T17:45:18.978133" elapsed="6.426465">Variable '${username}' not found.</status>
+</test>
+<status status="FAIL" start="2026-02-20T17:45:18.709726" elapsed="6.695703"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Excel" id="s1" pass="0" fail="1" skip="0">Excel</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-20T17:45:18.975693" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\ANGEL PATI\WiproRobotFramewrok\DataDriven\Excel.robot", line 0</msg>
+<msg time="2026-02-20T17:45:18.975806" level="ERROR">In source file:
+  File "C:UsersANGEL PATIWiproRobotFramewrokTestDataddtLogindata.xlsx", line 0</msg>
+<msg time="2026-02-20T17:45:18.977900" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find C:\Users\ANGEL PATI\WiproRobotFramewrok\DataDriven\UsersANGEL PATIWiproRobotFramewrokTestDataddtLogindata.xlsx but file does not exist.</msg>
+</errors>
+</robot>
